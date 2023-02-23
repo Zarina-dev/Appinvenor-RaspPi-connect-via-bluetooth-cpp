@@ -153,19 +153,6 @@ void write_server(int client, char *message, int messageLen)
         printf("sent < 0bytes\n");
     }
 
-
-#if 0   // origin src
-      // send data to the client
-    char messageArr[1024] = { 0 };
-    int bytes_sent;
-    strcpy(messageArr, message);
-
-    bytes_sent = write(client, messageArr, strlen(messageArr));
-    if (bytes_sent > 0) {
-        printf("sent [%s] %d\n", messageArr, bytes_sent);
-    }
-
-#endif
 }
 
 
