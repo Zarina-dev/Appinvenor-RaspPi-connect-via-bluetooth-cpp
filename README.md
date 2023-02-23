@@ -1,13 +1,19 @@
 # Connect Appinventor app with RaspPi via bluetooth (Raspberry pi 4, c++)
 
+# Data flow:
+(check to see video result)
+
+<img width="598" alt="image" src="https://user-images.githubusercontent.com/61898376/220945981-c4fcda60-e08f-4ce9-afee-d9a10a0ef008.png">
+
+
 # 1. Code Preparations
 
-## Android mobile & Raspberry pi Pairing
+## a. Android mobile & Raspberry pi Pairing
 before starting a mobile Device which will install app inventor App and raspberry pi **should be paired**
 
 I referenced this page: <a href="https://webnautes.tistory.com/1137">in Korean</a>
 
-## raspberri pi  (server)
+## b. raspberri pi  (server)
 
 **Used:**
 
@@ -31,7 +37,7 @@ pi@raspberrypi:~FOLDER_PATH $ ./main1     // will be listening to client
 ```
 
 
-## app inventor App (Mobile)
+## c. app inventor App (Mobile)
 
 **import .aia file:**
 
@@ -54,12 +60,15 @@ pi@raspberrypi:~FOLDER_PATH $ ./main1     // will be listening to client
   
 ---
 
-# 2. Results after connected
+# 2. Result
 
-## app inventor App
+## a. app inventor App
 
 ![image](https://user-images.githubusercontent.com/61898376/220891411-34142ede-7d0f-453e-9b96-8c82fee4af4b.png)
 
-## raspberri terminal
+## b. raspberri terminal
 
 <img width="596" alt="image" src="https://user-images.githubusercontent.com/61898376/220912560-406da4fe-666e-486b-843b-01a4407071a2.png">
+
+## c. result video
+<a href="https://www.youtube.com/shorts/GnplWsxTpzo">Youtube</a>
