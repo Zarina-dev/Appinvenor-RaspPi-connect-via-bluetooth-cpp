@@ -1,0 +1,16 @@
+
+
+checked only if sending and receiving correctly.
+
+
+Note: app inventor accepts all packets as a string character.
+thats's why making packets just string
+
+ex: sending msg
+1. RES_TEMP_HUM message:
+		"temp: 11.1, humid: 22.2"
+2. FIRE_DETECTED message:
+		"4"
+
+	
+
