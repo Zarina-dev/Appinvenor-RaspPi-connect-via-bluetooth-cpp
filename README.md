@@ -1,34 +1,62 @@
 # Connect Appinventor app with RaspPi via bluetooth (Raspberry pi 4, c++)
 
+# 1. Code Preparations
+
 ## raspberri pi  (server)
+
+**Used:**
 
 raspberry pi: raspberry pi 4 model b
 
+IDE: Visual Studio Code
+
 language: c++
 
+packages: wiringPi (should be installed before running c++ code)
 
+---
 
+**Build c++ file:**
+
+1. Open terminal, go to folder 
+2. input this commands:
+```
+pi@raspberrypi:~FOLDER_PATH $ g++ -o main1 main.cpp -lbluetooth -lpthread
+pi@raspberrypi:~FOLDER_PATH $ ./main1     // will be listening to client 
+```
 
 
 ## app inventor App (Mobile)
 
+**import .aia file:**
 
-### [PC - MIT APP INVENTOR page] .aia file import :
- 
-<a href="https://appinventor.mit.edu/"> App inventor site </a> >> Create Apps >>  Project >> Import project (.aia) from my computer >> upload ```appInventorApp.aia``` file
- 
- ### install to mobile
+open MIT APP INVENTOR page in PC chrome
 
-  1. [MOBILE] download **MIT AI2 Companion** app
-  2.  [PC - MIT APP INVENTOR page]  ```Connect``` >> ```AI Companion``` >>> QR code window opens
-  3.  [MOBILE - MIT AI2 Companion] ```scan QR code``` >>> scan QR
+ 1. <a href="https://appinventor.mit.edu/"> Go to App inventor site </a>
+ 2. click 'Create Apps'   
+ 3. click 'Project' tab
+ 4. click 'Import project (.aia) from my computer'
+ 5. upload ```appInventorApp.aia``` file
+ 
+
+---
+ 
+**install app inventor App to mobile:**
+
+  1. [in MOBILE] download **MIT AI2 Companion** app from google store
+  2. [in PC - MIT APP INVENTOR page]  ```Connect``` >> ```AI Companion``` >>> QR code window will be open
+  3. [in MOBILE - MIT AI2 Companion] ```scan QR code``` >>> scan QR
   
   
   
 ---
-## app inventor App 화면 after connected
+
+# 2. Results after connected
+
+## app inventor App
 
 ![image](https://user-images.githubusercontent.com/61898376/220891411-34142ede-7d0f-453e-9b96-8c82fee4af4b.png)
 
-## raspberri terminal 내용
-![image](https://user-images.githubusercontent.com/61898376/220891589-c79f0238-4db7-4f1a-a3c5-03083a1cf4f9.png)
+## raspberri terminal
+
+<img width="596" alt="image" src="https://user-images.githubusercontent.com/61898376/220912560-406da4fe-666e-486b-843b-01a4407071a2.png">
