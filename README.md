@@ -2,6 +2,11 @@
 
 # 1. Code Preparations
 
+## Android mobile & Raspberry pi Pairing
+before starting a mobile Device which will install app inventor App and raspberry pi **should be paired**
+
+I referenced this page: <a href="https://webnautes.tistory.com/1137">in Korean</a>
+
 ## raspberri pi  (server)
 
 **Used:**
@@ -30,9 +35,7 @@ pi@raspberrypi:~FOLDER_PATH $ ./main1     // will be listening to client
 
 **import .aia file:**
 
-open MIT APP INVENTOR page in PC chrome
-
- 1. <a href="https://appinventor.mit.edu/"> Go to App inventor site </a>
+ 1. in PC <a href="https://appinventor.mit.edu/"> Go to App inventor site </a>
  2. click 'Create Apps'   
  3. click 'Project' tab
  4. click 'Import project (.aia) from my computer'
