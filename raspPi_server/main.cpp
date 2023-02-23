@@ -83,7 +83,7 @@ void *ThreadMain(void* argument)
     pthread_detach(pthread_self());  
     int client = (int)argument;  
  
-    strcpy(sendMsg,"4" );    // FIRE_DETECTED alert msg  
+    strcpy(sendMsg,"4" );    // FIRE_DETECTED alert msg  (it doesn't have to be 4, just should be 1 byte send)
     
     write_server(client, sendMsg, strlen(sendMsg));     // send 1 fire detected message to appInventor App (will be "FIRE DETECTED" alert) right after they get connected
     printf("fire detected message sent\n");
@@ -104,13 +104,13 @@ void *ThreadMain(void* argument)
         {
            case REQ_TEMP_HUM_ID:                 // appInventor App's 온습도 정보 요청(left-bottom) btn clicked
             printf("TEMP_HUMID_INFO start sending requested\n");  
-            strcpy(sendMsg, "temp: 11.1, humid: 22.2");             // can do like this func: read temp,humid info from sensor, and send that to client in every 3second 
+            strcpy(sendMsg, "temp: 11.1, humid: 22.2");             // can add like this func in future: read temp,humid info from sensor, and send that to client in every 3second 
             write_server(client, sendMsg, strlen(sendMsg));            
            break; 
 
           
            case END_TEMP_HUM_ID:                // appInventor App's 온습도 정보 종료(right-bottom) btn clicked
-            printf("TEMP_HUMID_INFO sending STOP requested\n");      // can do like this func: stops sending temp,humid data in every 3sec
+            printf("TEMP_HUMID_INFO sending STOP requested\n");      // can add like this func in future: stops sending temp,humid data in every 3sec
             // don't send anything
            break;
 
