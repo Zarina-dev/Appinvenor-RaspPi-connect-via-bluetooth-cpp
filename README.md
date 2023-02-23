@@ -1,7 +1,7 @@
 # Connect Appinventor app with RaspPi via bluetooth (Raspberry pi 4, c++)
 
 # Data flow:
-(check to see video result)
+(check to see  <a href="https://www.youtube.com/shorts/GnplWsxTpzo">video result in youtube</a>)
 
 <img width="598" alt="image" src="https://user-images.githubusercontent.com/61898376/220945981-c4fcda60-e08f-4ce9-afee-d9a10a0ef008.png">
 
